@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.frame {
+    height: 500px;
+    width: 500px;
+    /* background-color: aqua; */
+    position: relative;
+    background-image: url('http://vsegda-pomnim.com/uploads/posts/2022-03/1648744702_42-vsegda-pomnim-com-p-priroda-les-ozero-foto-50.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.arrow {
+    position: absolute;
+    top: calc(50% - 25px);
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    line-height: 50px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    border-radius: 50%;
+}
+
+.arrow.right {
+    right: 20px;
+}
+
+.arrow.left {
+    left: 20px;
+}
+
+.nav {
+    position: absolute;
+    min-width: 100px;
+    height: 40px;
+    background-color: #552266;
+    bottom: 50px;
+    left: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.point {
+    position: static;
+    height: 15px;
+    width: 15px;
+    background-color: aliceblue;
+    border-radius: 50%; 
+    cursor: pointer;
+}
+
+.point.active {
+    background-color: blue;
+}
